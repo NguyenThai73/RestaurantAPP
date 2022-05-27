@@ -38,7 +38,7 @@ const HomeHeader = ({ userPhoto, searchMenu, navigation }) => {
                             tintColor: COLORS.darkgray
                         }}
                     />
-                    <TextInput style={styles.search_bar_text} placeholder='Search'
+                    <TextInput style={styles.search_bar_text} placeholder='Tìm kiếm'
                         onChangeText={(text) => searchMenu(text)} />
                 </View>
             </View>

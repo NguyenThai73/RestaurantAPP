@@ -44,7 +44,7 @@ const MenuList = ({ navigation, menu, onPressFavorite, favorites, categorySelect
                 {/* Name & Price */}
                 <View style={styles.name_price_container}>
                     <Text style={styles.name}>{item.name}</Text>
-                    <Text style={styles.price}>Rs. {item.price}</Text>
+                    <Text style={styles.price}>{item.price} VND</Text>
                 </View>
 
             </TouchableOpacity>
@@ -55,7 +55,7 @@ const MenuList = ({ navigation, menu, onPressFavorite, favorites, categorySelect
     return (
         <View style={{ flex: 1 }}>
 
-            {!categorySelected ? <Text style={styles.heading}>Explore Popular</Text> : null}
+            {!categorySelected ? <Text style={styles.heading}>Thực đơn</Text> : null}
             <FlatList
                 data={menu}
                 numColumns={2}

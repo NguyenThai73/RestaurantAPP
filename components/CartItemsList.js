@@ -26,7 +26,7 @@ const CartItems = ({ cartItems, getTotal, deleteItem, changeQty, confirmOrder, n
                 <View
                     style={styles.name_price_container}>
                     <Text style={styles.name}>{item.name}</Text>
-                    <Text style={styles.price}>Rs. {item.price}</Text>
+                    <Text style={styles.price}>{item.price} VND</Text>
 
                     {/* Delete Image */}
                     <TouchableOpacity style={styles.delete} onPress={() => deleteItem(item.name)}>
@@ -82,7 +82,7 @@ const CartItems = ({ cartItems, getTotal, deleteItem, changeQty, confirmOrder, n
                     {/* Total */}
                     <View style={styles.total}>
                         <Text style={styles.total_text}>Total:</Text>
-                        <Text style={styles.total_text}>Rs. {getTotal()}</Text>
+                        <Text style={styles.total_text}>{getTotal()} VND</Text>
                     </View>
                     {/* Order Button */}
                     <View style={{ margin: SIZES.padding * 2, marginTop: 0 }}>
@@ -92,7 +92,7 @@ const CartItems = ({ cartItems, getTotal, deleteItem, changeQty, confirmOrder, n
                 </View>
                 :
                 <View style={styles.empty_text}>
-                    <Text style={{ ...FONTS.h4 }}>Your Cart is empty!</Text>
+                    <Text style={{ ...FONTS.h4 }}>Giỏ của bạn trống!</Text>
                 </View>
             }
 

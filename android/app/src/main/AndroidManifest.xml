@@ -29,7 +29,6 @@
         </intent-filter>
       </activity>
      
-      <!--  GOOGlE MAPS API -->
       <meta-data
         android:name="com.google.android.geo.API_KEY"
         android:value="AIzaSyCPHmbX8sD2lmujFHxSUOvGlY5mH_q3SI8"/> 

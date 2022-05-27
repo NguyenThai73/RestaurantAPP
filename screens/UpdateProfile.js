@@ -146,7 +146,7 @@ const UpdateProfile = ({ route, navigation }) => {
 
                     {/* Change profile pic */}
                     <TouchableOpacity onPress={selectImage}>
-                        <Text style={styles.hyperlink_text}>Change profile pic</Text>
+                        <Text style={styles.hyperlink_text}>Thay đổi ảnh đại diện</Text>
                     </TouchableOpacity>
 
                     <ScrollView >

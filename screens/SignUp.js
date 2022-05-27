@@ -34,7 +34,7 @@ const signUpSchema = yup.object({
         .label('Phone number')
         .required()
         .matches(
-            /^\d{11}$/,
+            /^\d{10}$/,
             "Phone number is not valid")
 });
 
@@ -131,7 +131,7 @@ const SignUp = ({ navigation, route, fromScreen, setUserInfo }) => {
                                 {/* name field */}
                                 <TextInput
                                     style={Globalstyles.input}
-                                    placeholder=' Name'
+                                    placeholder=' Tên'
                                     onChangeText={props.handleChange('name')}
                                     value={props.values.name}
                                     onBlur={props.handleBlur('name')} />
@@ -155,7 +155,7 @@ const SignUp = ({ navigation, route, fromScreen, setUserInfo }) => {
                                 {/* password field */}
                                 <TextInput
                                     style={Globalstyles.input}
-                                    placeholder=' Password'
+                                    placeholder=' Mật khẩu'
                                     onChangeText={props.handleChange('password')}
                                     value={props.values.password}
                                     secureTextEntry
@@ -167,7 +167,7 @@ const SignUp = ({ navigation, route, fromScreen, setUserInfo }) => {
                                 {/* phone number field */}
                                 <TextInput
                                     style={Globalstyles.input}
-                                    placeholder=' Phone number'
+                                    placeholder=' Số điện thoại'
                                     onChangeText={props.handleChange('phone')}
                                     value={props.values.phone}
                                     keyboardType='numeric'
@@ -177,7 +177,7 @@ const SignUp = ({ navigation, route, fromScreen, setUserInfo }) => {
                                 )}
 
                                 {/* signup button */}
-                                <CustomButton text='Sign Up' onPressButton={props.handleSubmit} />
+                                <CustomButton text='Đăng ký' onPressButton={props.handleSubmit} />
 
                                 {/* progress bar */}
                                 {clicked &&
@@ -189,10 +189,10 @@ const SignUp = ({ navigation, route, fromScreen, setUserInfo }) => {
 
                     {/* signin hyperlink */}
                     <View style={Globalstyles.hyperlink_container}>
-                        <Text style={Globalstyles.account_text}>Already have a account? </Text>
+                        <Text style={Globalstyles.account_text}>Bạn đã có tài khoản? </Text>
 
                         <TouchableOpacity onPress={() => navigation.navigate('SignIn', { screen: screen, currentItem: item, currentCategory: category })}>
-                            <Text style={Globalstyles.hyperlink_text}>Sign In</Text>
+                            <Text style={Globalstyles.hyperlink_text}>Đăng nhập</Text>
                         </TouchableOpacity>
                     </View>
 

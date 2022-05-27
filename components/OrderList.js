@@ -24,12 +24,12 @@ const OrderList = ({ navigation, orders, deleteOrder }) => {
 
                     {/* Order No */}
                     <View style={styles.row}>
-                        <Text style={styles.order_no_text}>Order : {index + 1}</Text>
+                        <Text style={styles.order_no_text}>Gọi món : {index + 1}</Text>
 
                         {/* Time */}
                         <View style={{ flexDirection: 'row' }}>
                             <Image source={icons.time} style={{ height: 20, width: 20, tintColor: COLORS.primary }} />
-                            <Text style={{ ...FONTS.body4, color: COLORS.black }}>  {item.time} mins</Text>
+                            <Text style={{ ...FONTS.body4, color: COLORS.black }}>  {item.time} phút</Text>
                         </View>
                     </View>
 
@@ -40,19 +40,19 @@ const OrderList = ({ navigation, orders, deleteOrder }) => {
                     {/* Total */}
                     <View style={styles.total}>
                         <Text style={{ ...FONTS.body3, color: COLORS.black }}>Total: </Text>
-                        <Text style={{ ...FONTS.body2, color: COLORS.black }}>Rs. {item.total}</Text>
+                        <Text style={{ ...FONTS.body2, color: COLORS.black }}> {item.total} VND</Text>
                     </View>
 
                     {/* Track & Cancel buttons */}
                     <View style={styles.buttons_container}>
                         <TouchableOpacity style={{ ...styles.buttons, marginRight: 40 }}
                             onPress={() => navigation.navigate('OrderDelivery', { time: item.time + 10 })}>
-                            <Text style={styles.buttons_text}>Track Order</Text>
+                            <Text style={styles.buttons_text}>Theo dõi đơn</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity style={{ ...styles.buttons, backgroundColor: 'red' }}
                             onPress={() => deleteOrder(item.oid)}>
-                            <Text style={styles.buttons_text}>Cancel Order</Text>
+                            <Text style={styles.buttons_text}>Hủy đơn</Text>
                         </TouchableOpacity>
                     </View>
 

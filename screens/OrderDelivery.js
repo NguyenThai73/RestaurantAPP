@@ -181,7 +181,7 @@ const OrderDelivery = ({ route }) => {
                         {/* Name */}
                         <View style={{ flex: 1, marginLeft: SIZES.padding }}>
                             <Text style={styles.name}>{currentRestaurant?.courier.name}</Text>
-                            <Text style={styles.deliveryBoy}>Delivery Boy</Text>
+                            <Text style={styles.deliveryBoy}>Người giao hàng</Text>
                         </View>
 
                     </View>

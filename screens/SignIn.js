@@ -108,7 +108,7 @@ const SignIn = ({ navigation, route }) => {
                                 {/* password field*/}
                                 <TextInput
                                     style={Globalstyles.input}
-                                    placeholder=' Password'
+                                    placeholder=' Mật khẩu'
                                     onChangeText={props.handleChange('password')}
                                     value={props.values.password}
                                     secureTextEntry
@@ -118,12 +118,12 @@ const SignIn = ({ navigation, route }) => {
                                 )}
 
                                 {/* signin button */}
-                                <CustomButton text='Sign In' onPressButton={props.handleSubmit} />
+                                <CustomButton text='Đăng nhập' onPressButton={props.handleSubmit} />
 
                                 {/* forgot password */}
                                 <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}
                                     style={Globalstyles.hyperlink_container}>
-                                    <Text style={Globalstyles.hyperlink_text}>Forgot password?</Text>
+                                    <Text style={Globalstyles.hyperlink_text}>Quên mật khẩu?</Text>
                                 </TouchableOpacity>
 
 
@@ -133,10 +133,10 @@ const SignIn = ({ navigation, route }) => {
 
                     {/* hyperlink signup */}
                     <View style={Globalstyles.hyperlink_container}>
-                        <Text style={Globalstyles.account_text}>Don't have a account? </Text>
+                        <Text style={Globalstyles.account_text}>Bạn không có tài khoản? </Text>
 
                         <TouchableOpacity onPress={() => navigation.navigate('SignUp', { screen: screen })}>
-                            <Text style={Globalstyles.hyperlink_text}>Sign Up</Text>
+                            <Text style={Globalstyles.hyperlink_text}>Đăng ký</Text>
                         </TouchableOpacity>
                     </View>
 

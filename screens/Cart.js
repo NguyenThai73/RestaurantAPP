@@ -45,7 +45,7 @@ const Cart = ({ navigation }) => {
         for (let index = 0; index < cartItems.length; index++) {
             var key = `item${index + 1}`;
             var obj = {};
-            obj[key] = cartItems[index].qty + ' ' + cartItems[index].name + ' Rs.' + cartItems[index].price;
+            obj[key] = cartItems[index].qty + ' ' + cartItems[index].name + ' VND' + cartItems[index].price;
             array.push(obj)
         }
 

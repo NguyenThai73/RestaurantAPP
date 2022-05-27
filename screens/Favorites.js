@@ -48,7 +48,7 @@ const Favorites = ({ navigation }) => {
                         categories={categoryData} />
 
                     : <View style={styles.empty_text}>
-                        <Text style={{ ...FONTS.h4 }}>Nothing added to Favorites</Text>
+                        <Text style={{ ...FONTS.h4 }}>Không có món được thêm vào Mục yêu thích</Text>
                     </View>
             }
 

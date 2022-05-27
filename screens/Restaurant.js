@@ -102,14 +102,14 @@ const Restaurant = ({ route, navigation }) => {
 
                     {/* Duration */}
                     <View style={styles.row_container}>
-                        <Text style={styles.duration_text}>Duration:</Text>
+                        <Text style={styles.duration_text}>Thời gian:</Text>
                         <Text style={styles.duration_text}>{item?.duration}</Text>
                     </View>
 
                     <View style={styles.row_container}>
 
                         {/* Price */}
-                        <Text style={styles.price}>Rs. {item?.price}</Text>
+                        <Text style={styles.price}> {item?.price} VND</Text>
 
                         {/* Rating */}
                         <View style={{ flexDirection: 'row' }}>

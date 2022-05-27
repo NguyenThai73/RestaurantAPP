@@ -32,7 +32,7 @@ const CategoriesList = ({ onSelectCategory, selectedCategory, categories }) => {
 
     return (
         <View style={styles.view_container}>
-            <Text style={styles.heading}>Categories</Text>
+            <Text style={styles.heading}>Thể loại</Text>
             <FlatList
                 data={categories}
                 horizontal

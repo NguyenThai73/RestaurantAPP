@@ -42,7 +42,7 @@ const Order = ({ navigation }) => {
                     <OrderList navigation={navigation} orders={orders} deleteOrder={deleteOrder} />
                     :
                     <View style={styles.empty_text}>
-                        <Text style={{ ...FONTS.h4 }}>Nothing Ordered Yet!</Text>
+                        <Text style={{ ...FONTS.h4 }}>Chưa có đơn đặt hàng nào!</Text>
                     </View>
 
             }

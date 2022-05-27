@@ -26,11 +26,11 @@ const emailSchema = yup.object({
 const sendLink = async (email, navigation) => {
     try {
         await firebase.auth().sendPasswordResetEmail(email)
-        Alert.alert("Success :)", "Password Reset link has been sent to your email")
+        Alert.alert("Thành công :)", "Liên kết Đặt lại mật khẩu đã được gửi đến email của bạn")
         navigation.navigate('SignIn')
 
     } catch (e) {
-        Alert.alert("Error", e.message)
+        Alert.alert("Lỗi", e.message)
     }
 }
 
@@ -46,7 +46,7 @@ const ForgotPassword = ({ navigation }) => {
 
                 <View style={Globalstyles.container_2}>
                     <Text style={styles.text}>
-                        Enter your registered email for the reset password link
+                        Nhập email đã đăng ký của bạn
                     </Text>
 
                     <ScrollView >

@@ -2,17 +2,17 @@ import { icons } from "."
 export const categoryData = [
     {
         id: 1,
-        name: "Rolls",
+        name: "Cuộn",
         icon: icons.ch_roll,
     },
     {
         id: 2,
-        name: "Burgers",
+        name: "Bánh mì\nkẹp thịt",
         icon: icons.burgers,
     },
     {
         id: 3,
-        name: "Bar B Q",
+        name: "Thịt\nnướng",
         icon: icons.barbq,
     },
     {
@@ -28,7 +28,7 @@ export const categoryData = [
 
     {
         id: 6,
-        name: "Fish",
+        name: "Cá",
         icon: icons.fish,
     },
     {
@@ -38,7 +38,7 @@ export const categoryData = [
     },
     {
         id: 8,
-        name: "Paratha",
+        name: "Bánh\nmì dẹp",
         icon: icons.paratha,
     },
     {
@@ -48,12 +48,12 @@ export const categoryData = [
     },
     {
         id: 10,
-        name: "French\nFries",
+        name: "Khoai\ntây\nchiên",
         icon: icons.french_fries,
     },
     {
         id: 11,
-        name: "Drinks",
+        name: "Đồ\nuống",
         icon: icons.cold_drinks,
     },
 
